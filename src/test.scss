@@ -1,0 +1,32 @@
+
+$color : green;
+$child-color:blue;
+
+@mixin display($value) {
+    display: inline-block;
+    font-size: 30px;
+    color: greenyellow;
+    letter-spacing: $value;
+    
+} 
+.bg-infi{
+    font-size: 50px + 30px;
+    font-weight:bold;
+    color: $color !important;
+.child{
+    color:$child-color;
+    // font-size: 100px bold;
+    @include display("20px");
+   
+}
+:hover{
+    color: red;
+    
+}
+
+::after{
+content: "channel tech guru ji";
+}
+    
+}
+
